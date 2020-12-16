@@ -1,0 +1,125 @@
+<doctype>
+  <html>
+  <head>
+   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet"  href="style.css">
+    <script src="functions.js"></script>
+   
+    
+
+  </head>
+  <body onload="myFunction()" style="margin:0;" id="resize" >
+
+    <div class="box1" id="help" style="display: none;">
+            <text style="font-size: 30px"> Help content goes here</text>
+            <img onClick="window.close()" id="image8"src="http://educationalrc.org/tasks/2/assets/images/close_icon.png" height="40px" />
+
+     </div>
+
+          <div class="box1" id="dummy" style="display: none;">
+            <img id="image9"src="http://educationalrc.org/tasks/2/assets/images/dummy.jpg" height="40px" />
+            <img onClick="window.close()" id="image81"src="http://educationalrc.org/tasks/2/assets/images/close_icon.png" height="40px" />
+ 
+          </div>
+
+    <div id="body">
+    <div id="loader"></div>
+    <div style="display:none;"  id="myDiv" class="animate-bottom">
+
+    <div class="header" >
+    <span id="title" >Circle, choose and write.</span>
+    <img  onClick="dummy()" id="image1" src="http://educationalrc.org/tasks/2/assets/images/resourse_icon.png" height="40px" width="40px"  />
+    <img onClick="help()" id="image2"src="http://educationalrc.org/tasks/2/assets/images/help_icon.png" height="40px" />
+    
+    </div>
+          
+
+     
+
+    <div id="background">   
+    
+  
+
+    <div id="box1" class="box displayed" class="box" >
+      
+      <img src="http://educationalrc.org/tasks/2/assets/images/p19e23/1.png" height="250px" width="500px" align="center"/>
+      <img class="tick" id="imgid" src="http://educationalrc.org/tasks/2/assets/images/tikMark.png" height="30px" width="30px"  style="display:none" />
+      <img class="wrong" id="imgid3" src="http://educationalrc.org/tasks/2/assets/images/crossMark.png" height="30px" width="30px"  style="display:none" />
+      <div class="question">
+      <span class="normal">What's</span>
+      <span onclick="picture()" class="choose">this </span>
+      <span style="font-size: 35px">/</span>
+      <span id="buttonid" onclick="picture3()" class="choose">that</span>
+      <span class="normal">?</span>
+      </div>
+      
+      
+      <div id="answer">
+      <img class="tick2"id="imgid2" src="http://educationalrc.org/tasks/2/assets/images/tikMark.png" height="30px" width="30px" style="display:none;" />
+      <img class="wrong2" id="imgid4" src="http://educationalrc.org/tasks/2/assets/images/crossMark.png" height="30px" width="30px"  style="display:none;" />
+      <div class="question">
+      <span onclick="picture2()" class="choose ">It's </span>
+      <span style="font-size: 35px" "font-weight: bolder">/</span>
+      <span  id="buttonid2" onclick="picture4()"  class="choose"> They're </span>
+      <span style="font-size: 30px; font-family: arial;
+">an orange school bag</span>
+      </div>
+      
+  
+    </div>
+
+  
+      
+    </div>
+    <div id="box2" class="box" style="display: none">
+      
+      <img src="http://educationalrc.org/tasks/2/assets/images/p19e23/2.png" height="250px" width="500px" align="center"/>
+      <img class="tick22" id="imgid5" src="http://educationalrc.org/tasks/2/assets/images/tikMark.png" height="30px" width="30px"  style="display:none" />
+      <img class="wrong22" id="imgid6" src="http://educationalrc.org/tasks/2/assets/images/crossMark.png" height="30px" width="30px"  style="display:none" />
+      <div class="question"><span class="normal">What are</span>
+      <span id="buttonid3"onclick="picture3box2()" class="choose"> these </span>
+      <span style="font-size: 35px">/</span>
+      <span onclick="picturebox2()" class="choose">those</span>
+      <span class="normal">?</span></div>
+      
+      
+      <div id="answer">
+      <img class="tick23"id="imgid7" src="http://educationalrc.org/tasks/2/assets/images/tikMark.png" height="30px" width="30px" style="display:none;" />
+      <img class="wrong23" id="imgid8" src="http://educationalrc.org/tasks/2/assets/images/crossMark.png" height="30px" width="30px"  style="display:none;" />
+      <div class="question">
+        <span id="buttonid4"onclick="picture4box2()" class="choose">It's </span>
+      <span style="font-size: 35px" "font-weight: bolder">/</span>
+      <span  onclick="picture2box2()"  class="choose"> They're </span>
+      <span class="normal">green pens</span>
+      </div>
+      
+  
+    </div>
+  </div>
+    <div class="styling">
+      <img  onClick="reloadAll();"id="image3" src="http://educationalrc.org/tasks/2/assets/images/replay_icon.png" height="50px" width="50px"  />
+    <img onClick="Reloadpage()"id="image4"src="http://educationalrc.org/tasks/2/assets/images/reload_icon.png" height="45px" />
+    <img onClick="viewAnswer();"id="image5"src="http://educationalrc.org/tasks/2/assets/images/showAns_icon.png" height="45px" />
+    <img  onClick="prevpage() "id="image6"src="http://educationalrc.org/tasks/2/assets/images/back_icon.png" height="45px" />
+    <div class="textbox">
+
+      <input type="text" id="number" value="1" style="border:transparent;"  />
+      <span> of 2</span>
+    </div>
+    
+    <img onClick="nextpage()" id="image7"src="http://educationalrc.org/tasks/2/assets/images/next_icon.png" height="45px" />
+
+    </div>
+
+    
+    
+    </div>
+  </div>
+
+
+  
+  </body>
+
+  </html>
